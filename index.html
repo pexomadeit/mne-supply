@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MNE Supply - Local deals on tech & lifestyle essentials in Fargo, ND & Moorhead, MN. Premium accessories, fragrances, and apparel at exceptional prices.">
+    <meta name="keywords" content="accessories, phone cases, AirPods, fragrances, clothing, premium quality, distribution">
+    <meta name="author" content="MNE Supply">
+    <meta property="og:title" content="MNE Supply - Premium Accessories & Lifestyle">
+    <meta property="og:description" content="Shop premium accessories, protective cases, luxury fragrances, and trendy clothing at MNE Supply.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mnedistribution.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#0a0e27">
+    <title>MNE Supply - Premium Accessories, Fragrances & Clothing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>✨ MNE Supply</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="shop.html">Shop</a>
+                    <div class="dropdown-menu">
+                        <a href="shop.html">All Products</a>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="phone-cases.html">Phone & AirPods Cases</a>
+                        <a href="fragrances.html">Fragrances</a>
+                        <a href="clothing.html">Clothing & Apparel</a>
+                    </div>
+                </li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" onclick="openCart()" class="cart-icon">🛒 <span id="cart-count">0</span></a></li>
+            </ul>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Local Deals on Tech & Lifestyle Essentials</h2>
+            <p>Your neighborhood source for premium accessories, luxury fragrances, and stylish apparel. Serving Fargo, ND & Moorhead, MN with authentic products at exceptional prices.</p>
+            <div class="hero-cta">
+                <a href="shop.html" class="cta-button">Shop Now</a>
+                <a href="about.html" class="cta-button secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Product - Suave Cologne -->
+    <section class="featured-product">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="suave cologne.png.png" alt="Suave Cologne 3.8 FL. OZ Bottle">
+                </div>
+                <div class="featured-text">
+                    <h2>⭐ New Product Launch</h2>
+                    <h3>Suave Cologne</h3>
+                    <p class="featured-spec">3.8 FL. OZ Bottle</p>
+                    <p class="featured-price">$25.00</p>
+                    <p class="featured-description">Premium quality fragrance now available at MNE Supply. Order today and pick up at our Fargo location!</p>
+                    <div class="featured-buttons">
+                        <a href="https://buy.stripe.com/test_4gM28r2Bx1eX87ad6S1Fe00" target="_blank" class="buy-button">Buy Now – $25 (Pick Up Today)</a>
+                        <button class="btn-secondary" onclick="addToCart('Suave Cologne 3.8 FL. OZ', 25.00)">Add to Cart</button>
+                    </div>
+                    <div class="pickup-benefits">
+                        <p>💵 <strong>Cash accepted</strong> at local pickup</p>
+                        <p>📍 Pickup available in <strong>Moorhead / Fargo area</strong></p>
+                        <p>⚡ Same-day or next-day pickup available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured">
+        <h2>Our Collections</h2>
+        <div class="category-grid">
+            <!-- Category 1: Accessories -->
+            <div class="category-card">
+                <div class="card-icon">📦</div>
+                <h3>Accessories</h3>
+                <p>Premium wireless audio solutions with crystal-clear sound and comfort fit</p>
+                <ul class="feature-list">
+                    <li>✓ Noise Cancellation Technology</li>
+                    <li>✓ Extended Battery Life</li>
+                    <li>✓ Seamless Connectivity</li>
+                </ul>
+                <a href="shop.html#accessories" class="btn">Explore</a>
+            </div>
+
+            <!-- Category 2: Phone & AirPods Cases -->
+            <div class="category-card">
+                <div class="card-icon">📱</div>
+                <h3>Phone & AirPods Cases</h3>
+                <p>Protective and stylish cases to safeguard your devices in every situation</p>
+                <ul class="feature-list">
+                    <li>✓ Military-Grade Protection</li>
+                    <li>✓ Premium Materials</li>
+                    <li>✓ Elegant Designs</li>
+                </ul>
+                <a href="shop.html#cases" class="btn">Explore</a>
+            </div>
+
+            <!-- Category 3: Fragrance -->
+            <div class="category-card">
+                <div class="card-icon">🧴</div>
+                <h3>Cologne & Fragrance</h3>
+                <p>Luxury fragrances that make a lasting impression with premium scents</p>
+                <ul class="feature-list">
+                    <li>✓ Long-Lasting Formulas</li>
+                    <li>✓ Premium Ingredients</li>
+                    <li>✓ Exclusive Blends</li>
+                </ul>
+                <a href="shop.html#fragrance" class="btn">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <h2>Why Choose MNE Supply</h2>
+        <div class="benefits">
+            <div class="benefit-item">
+                <h3>🏪 Local Business</h3>
+                <p>Supporting your local Fargo-Moorhead community</p>
+            </div>
+            <div class="benefit-item">
+                <h3>📦 Quick Pickup</h3>
+                <p>Same-day or next-day local pickup available</p>
+            </div>
+            <div class="benefit-item">
+                <h3>💯 Quality Guaranteed</h3>
+                <p>100% authentic products with warranty</p>
+            </div>
+            <div class="benefit-item">
+                <h3>📞 Personal Service</h3>
+                <p>Local customer service team always ready to help</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About MNE Supply</h4>
+                    <p>Your trusted retail destination for premium accessories, fragrances, and apparel.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MNE Supply. All rights reserved.</p>
+                <p>Secure Shopping • Fast Shipping • Authentic Products</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <button class="cart-close" onclick="closeCart()">✕</button>
+            </div>
+            <div id="cart-items" class="cart-items"></div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax:</span>
+                    <span id="tax">$0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+                <button class="continue-shopping-btn" onclick="closeCart()">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cart Functions
+        function loadCart() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            updateCartCount();
+            return cart;
+        }
+
+        function saveCart(cart) {
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+        }
+
+        function addToCart(productName, price) {
+            const cart = loadCart();
+            const existingItem = cart.find(item => item.name === productName);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    name: productName,
+                    price: price,
+                    quantity: 1
+                });
+            }
+            
+            saveCart(cart);
+            showCartNotification(productName);
+        }
+
+        function removeFromCart(productName) {
+            let cart = loadCart();
+            cart = cart.filter(item => item.name !== productName);
+            saveCart(cart);
+            updateCartDisplay();
+        }
+
+        function updateQuantity(productName, quantity) {
+            const cart = loadCart();
+            const item = cart.find(item => item.name === productName);
+            if (item) {
+                item.quantity = Math.max(1, quantity);
+                saveCart(cart);
+                updateCartDisplay();
+            }
+        }
+
+        function updateCartCount() {
+            const cart = loadCart();
+            const count = cart.reduce((total, item) => total + item.quantity, 0);
+            const countEl = document.getElementById('cart-count');
+            if (countEl) countEl.textContent = count;
+        }
+
+        function openCart() {
+            document.getElementById('cart-modal').style.display = 'flex';
+            updateCartDisplay();
+        }
+
+        function closeCart() {
+            document.getElementById('cart-modal').style.display = 'none';
+        }
+
+        function updateCartDisplay() {
+            const cart = loadCart();
+            const cartItemsEl = document.getElementById('cart-items');
+            
+            if (cart.length === 0) {
+                cartItemsEl.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
+                document.querySelector('.cart-summary').style.display = 'none';
+                return;
+            }
+            
+            document.querySelector('.cart-summary').style.display = 'block';
+            cartItemsEl.innerHTML = cart.map(item => `
+                <div class="cart-item">
+                    <div class="item-info">
+                        <h4>${item.name}</h4>
+                        <p>$${item.price.toFixed(2)} each</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button onclick="updateQuantity('${item.name.replace(/'/g, "\\'")}', ${item.quantity - 1})">−</button>
+                        <input type="number" value="${item.quantity}" onchange="updateQuantity('${item.name.replace(/'/g, "\\'")}', this.value)" min="1">
+                        <button onclick="updateQuantity('${item.name.replace(/'/g, "\\'")}', ${item.quantity + 1})">+</button>
+                    </div>
+                    <div class="item-price">
+                        $${(item.price * item.quantity).toFixed(2)}
+                    </div>
+                    <button class="remove-btn" onclick="removeFromCart('${item.name.replace(/'/g, "\\'")}')">✕</button>
+                </div>
+            `).join('');
+
+            // Update totals
+            const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+            const tax = subtotal * 0.08; // 8% tax
+            const total = subtotal + tax;
+
+            document.getElementById('subtotal').textContent = '$' + subtotal.toFixed(2);
+            document.getElementById('tax').textContent = '$' + tax.toFixed(2);
+            document.getElementById('total').textContent = '$' + total.toFixed(2);
+        }
+
+        function showCartNotification(productName) {
+            const notification = document.createElement('div');
+            notification.className = 'cart-notification';
+            notification.textContent = `✓ "${productName}" added to cart!`;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.classList.add('show');
+            }, 10);
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 300);
+            }, 2000);
+        }
+
+        function proceedToCheckout() {
+            window.location.href = 'login.html';
+        }
+
+        // Initialize cart on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCart();
+        });
+
+        // Close cart when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('cart-modal');
+            if (modal && event.target === modal) {
+                closeCart();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to your MNE Supply account. Sign up for exclusive deals, track orders, and manage your wishlist. Secure checkout available.">
+    <meta name="keywords" content="login, account, order tracking, checkout, shop">
+    <meta name="author" content="MNE Supply">
+    <meta property="og:title" content="Login & Order Portal - MNE Supply">
+    <meta property="og:description" content="Secure login and checkout for MNE Supply customers.">
+    <meta property="og:type" content="website">
+    <title>Login & Order Portal - MNE Supply | Secure Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>✨ MNE Supply</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="shop.html">Shop</a>
+                    <div class="dropdown-menu">
+                        <a href="shop.html">All Products</a>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="phone-cases.html">Phone & AirPods Cases</a>
+                        <a href="fragrances.html">Fragrances</a>
+                        <a href="clothing.html">Clothing & Apparel</a>
+                    </div>
+                </li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="portal-container">
+        <!-- Login Section -->
+        <section class="portal-section login-section">
+            <h2>Customer Login</h2>
+            <form class="login-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+                <p class="form-text">Don't have an account? <a href="#signup">Create one now</a></p>
+            </form>
+        </section>
+
+        <!-- Sign Up Section -->
+        <section class="portal-section signup-section" id="signup">
+            <h2>Create Account</h2>
+            <form class="signup-form" onsubmit="handleSignup(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="John" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Doe" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email Address</label>
+                    <input type="email" id="signup-email" name="signup-email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="signup-password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms & Conditions</label>
+                </div>
+                <button type="submit" class="submit-btn">Create Account</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Order Status Section -->
+    <section class="order-status-section">
+        <h2>Check Your Order Status</h2>
+        <div class="order-check">
+            <p>Already placed an order? Track it here.</p>
+            <form class="order-form" onsubmit="trackOrder(event)">
+                <input type="text" placeholder="Enter Order Number (e.g., ORD-2026-001)" required>
+                <input type="email" placeholder="Enter Email Address" required>
+                <button type="submit" class="submit-btn">Track Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Account Dashboard (After Login) -->
+    <section class="account-dashboard hidden" id="dashboard">
+        <h2>My Account</h2>
+        <div class="dashboard-grid">
+            <div class="dashboard-section">
+                <h3>📦 Recent Orders</h3>
+                <div class="order-list">
+                    <div class="order-item">
+                        <p><strong>Order #ORD-2026-001</strong></p>
+                        <p>AirPods Pro x1, Premium iPhone Case x1</p>
+                        <p class="status">Status: Delivered</p>
+                        <p class="date">Date: Jan 15, 2026</p>
+                    </div>
+                </div>
+                <a href="#" class="view-all">View All Orders →</a>
+            </div>
+
+            <div class="dashboard-section">
+                <h3>❤️ Wishlist</h3>
+                <div class="wishlist">
+                    <p>AirPods Max Over-Ear</p>
+                    <p>Rich Oud - Premium Blend</p>
+                </div>
+                <a href="#" class="view-all">View Wishlist →</a>
+            </div>
+
+            <div class="dashboard-section">
+                <h3>👤 Profile Settings</h3>
+                <button class="setting-btn">Edit Profile</button>
+                <button class="setting-btn">Change Password</button>
+                <button class="setting-btn">Manage Addresses</button>
+                <button class="setting-btn">Manage Payment Methods</button>
+            </div>
+
+            <div class="dashboard-section">
+                <h3>🎁 Special Offers</h3>
+                <p>You have exclusive discounts available!</p>
+                <p class="discount">15% off on your next purchase</p>
+                <button class="setting-btn">View Offers</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Summary -->
+    <section class="cart-section">
+        <h2>Shopping Cart</h2>
+        <div class="cart-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <tr>
+                        <td colspan="5" class="empty-cart">Your cart is empty. <a href="shop.html">Continue Shopping</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span>$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span>$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax:</span>
+                    <span>$0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span>$0.00</span>
+                </div>
+
+                <div class="payment-methods">
+                    <h4>Payment Method</h4>
+                    <div class="method-group">
+                        <input type="radio" id="cash-pickup" name="payment" value="cash" checked>
+                        <label for="cash-pickup">
+                            <strong>💵 Pay Cash at Pickup</strong>
+                            <span class="method-desc">Pay when you pick up your order at our Fargo location</span>
+                        </label>
+                    </div>
+                    <div class="method-group">
+                        <input type="radio" id="card" name="payment" value="card">
+                        <label for="card">
+                            <strong>💳 Credit/Debit Card</strong>
+                            <span class="method-desc">Visa, Mastercard, American Express, Discover</span>
+                        </label>
+                    </div>
+                    <div class="method-group">
+                        <input type="radio" id="paypal" name="payment" value="paypal">
+                        <label for="paypal">
+                            <strong>🌐 PayPal</strong>
+                            <span class="method-desc">Fast and secure PayPal checkout</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About MNE Supply</h4>
+                    <p>Your trusted retail destination for premium accessories, fragrances, and apparel.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MNE Supply. All rights reserved.</p>
+                <p>Secure Shopping • Fast Shipping • Authentic Products</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            alert(`Welcome back, ${email}! (Demo - Not a real login)`);
+            // In a real application, this would authenticate with a backend
+            document.getElementById('dashboard').classList.remove('hidden');
+        }
+
+        function handleSignup(event) {
+            event.preventDefault();
+            const firstname = document.getElementById('firstname').value;
+            alert(`Welcome, ${firstname}! Your account has been created. (Demo)`);
+            // In a real application, this would create an account on the backend
+        }
+
+        function trackOrder(event) {
+            event.preventDefault();
+            alert('Order tracking functionality would connect to your backend system.');
+            // In a real application, this would query the order database
+        }
+
+        // Demo: Add product to cart
+        function addToCart(productName, price) {
+            const cartItems = document.getElementById('cart-items');
+            if (cartItems.innerHTML.includes('empty-cart')) {
+                cartItems.innerHTML = '';
+            }
+            const newRow = `
+                <tr>
+                    <td>${productName}</td>
+                    <td>$${price}</td>
+                    <td><input type="number" value="1" min="1" class="qty-input"></td>
+                    <td>$${price}</td>
+                    <td><button onclick="removeFromCart(this)">Remove</button></td>
+                </tr>
+            `;
+            cartItems.innerHTML += newRow;
+        }
+
+        function removeFromCart(btn) {
+            btn.closest('tr').remove();
+            const cartItems = document.getElementById('cart-items');
+            if (cartItems.children.length === 0) {
+                cartItems.innerHTML = '<tr><td colspan="5" class="empty-cart">Your cart is empty. <a href="shop.html">Continue Shopping</a></td></tr>';
+            }
+        }
+    </script>
+</body>
+</html>

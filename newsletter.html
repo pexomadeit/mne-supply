@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Subscribe to MNE Supply newsletter for local deals on tech & lifestyle essentials in Fargo, ND & Moorhead, MN. Get 10% off your first order.">
+    <meta name="keywords" content="newsletter, email signup, exclusive deals, promotions, discounts">
+    <meta name="author" content="MNE Supply">
+    <meta property="og:title" content="Newsletter - MNE Supply">
+    <meta property="og:description" content="Subscribe and get 10% off your first order plus exclusive deals.">
+    <meta property="og:type" content="website">
+    <title>Newsletter - MNE Supply | Get 10% Off</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>✨ MNE Supply</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="shop.html">Shop</a>
+                    <div class="dropdown-menu">
+                        <a href="shop.html">All Products</a>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="phone-cases.html">Phone & AirPods Cases</a>
+                        <a href="fragrances.html">Fragrances</a>
+                        <a href="clothing.html">Clothing & Apparel</a>
+                    </div>
+                </li>
+                <li><a href="newsletter.html" class="active">Newsletter</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Newsletter Hero Section -->
+    <section class="newsletter-hero">
+        <div class="container">
+            <div class="newsletter-content">
+                <h1>Join Our Community</h1>
+                <p class="newsletter-subtitle">Get exclusive deals, early access to new products, and special discounts delivered to your inbox.</p>
+                <div class="newsletter-highlight">
+                    <h2>🎁 Unlock 10% Off Your First Order</h2>
+                    <p>Subscribe today and receive an exclusive discount code valid on any purchase.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Form -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-form-wrapper">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Be the first to know about new releases, special offers, and insider content.</p>
+                
+                <form id="newsletterForm" class="newsletter-form" onsubmit="handleNewsletterSignup(event)">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            placeholder="Your Full Name" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="your@email.com" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <select id="preference" class="form-select">
+                            <option value="">Select Your Interest</option>
+                            <option value="accessories">Accessories</option>
+                            <option value="cases">Phone & AirPods Cases</option>
+                            <option value="fragrance">Fragrances</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="all">Everything</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input 
+                            type="checkbox" 
+                            id="terms" 
+                            required
+                        >
+                        <label for="terms">I agree to receive promotional emails and agree to the Privacy Policy</label>
+                    </div>
+                    <button type="submit" class="btn-primary newsletter-btn">
+                        Get My 10% Discount
+                    </button>
+                </form>
+
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <h3>✓ Thank You!</h3>
+                    <p>Check your email for your exclusive 10% discount code and welcome offer.</p>
+                    <p class="discount-code">Your Code: <strong>WELCOME10</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="newsletter-benefits">
+        <div class="container">
+            <h2>Why Subscribe?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📧</div>
+                    <h3>Exclusive Deals</h3>
+                    <p>Get subscriber-only prices and flash sales before anyone else.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>Early Access</h3>
+                    <p>Be first to shop new product launches and limited editions.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎁</div>
+                    <h3>Special Offers</h3>
+                    <p>Birthday specials, anniversary discounts, and seasonal promotions.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💡</div>
+                    <h3>Insider Tips</h3>
+                    <p>Product guides, styling tips, and expert recommendations delivered weekly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Preview -->
+    <section class="newsletter-featured">
+        <div class="container">
+            <h2>Shop Our Best Sellers</h2>
+            <p class="section-subtitle">These items are already favorites among our newsletter subscribers</p>
+            
+            <div class="featured-preview-grid">
+                <div class="featured-item">
+                    <div class="featured-item-image">
+                        <div class="product-placeholder">🎧</div>
+                    </div>
+                    <h3>Premium Wireless Earbuds</h3>
+                    <p class="product-desc">Noise-cancelling with 30-hour battery</p>
+                    <p class="product-price">$199.99</p>
+                </div>
+
+                <div class="featured-item">
+                    <div class="featured-item-image">
+                        <div class="product-placeholder">📱</div>
+                    </div>
+                    <h3>Phone Protective Case</h3>
+                    <p class="product-desc">Military-grade protection with style</p>
+                    <p class="product-price">$49.99</p>
+                </div>
+
+                <div class="featured-item">
+                    <div class="featured-item-image">
+                        <div class="product-placeholder">🌹</div>
+                    </div>
+                    <h3>Luxury Fragrance</h3>
+                    <p class="product-desc">Premium cologne with lasting scent</p>
+                    <p class="product-price">$89.99</p>
+                </div>
+
+                <div class="featured-item">
+                    <div class="featured-item-image">
+                        <div class="product-placeholder">👕</div>
+                    </div>
+                    <h3>Premium Hoodie</h3>
+                    <p class="product-desc">Comfortable and stylish everyday wear</p>
+                    <p class="product-price">$59.99</p>
+                </div>
+            </div>
+
+            <div class="newsletter-cta">
+                <p>Subscribe to unlock exclusive subscriber-only pricing on these items</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="newsletter-faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How often will I receive emails?</h4>
+                    <p>We send curated emails 2-3 times per week with new products, deals, and exclusive content. You can adjust frequency in your preferences anytime.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>When can I use my 10% discount?</h4>
+                    <p>Your discount code is valid immediately after signup and works on your first purchase of $25 or more. No expiration date.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I unsubscribe anytime?</h4>
+                    <p>Yes! Every email contains an unsubscribe link. You can also manage your preferences in your account dashboard anytime.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is my email secure?</h4>
+                    <p>Absolutely. We use enterprise-grade encryption and never share your data with third parties. Your privacy is our priority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>MNE Supply is your trusted source for premium accessories, phone cases, fragrances, and lifestyle products.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MNE Supply. All rights reserved.</p>
+                <p>Secure Shopping • Fast Shipping • Authentic Products</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleNewsletterSignup(event) {
+            event.preventDefault();
+
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const preference = document.getElementById('preference').value;
+
+            // Hide form and show success message
+            document.getElementById('newsletterForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Scroll to success message
+            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+
+            console.log('Newsletter Signup:', {
+                name: fullName,
+                email: email,
+                preference: preference,
+                timestamp: new Date()
+            });
+        }
+    </script>
+</body>
+</html>
