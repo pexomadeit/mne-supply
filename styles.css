@@ -2485,6 +2485,287 @@ a {
     }
 }
 
+/* ==================== FRAGRANCE SHOWCASE ==================== */
+.fragrance-showcase {
+    padding: 80px 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+    border-top: 1px solid rgba(59, 130, 246, 0.2);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.showcase-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.showcase-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+    border-radius: 20px;
+    padding: 40px;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    backdrop-filter: blur(10px);
+    min-height: 500px;
+}
+
+.showcase-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 30px rgba(59, 130, 246, 0.2));
+}
+
+.fragrance-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.showcase-details h2 {
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.fragrance-subtitle {
+    font-size: 20px;
+    color: #94a3b8;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.fragrance-specs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 25px;
+    background: rgba(15, 23, 42, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.spec-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.spec-item strong {
+    color: #06b6d4;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.spec-item span {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fragrance-description {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.price-section {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(59, 130, 246, 0.2);
+}
+
+.price-label {
+    color: #94a3b8;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.price-amount {
+    font-size: 48px;
+    color: #10b981;
+    font-weight: 700;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn-buy-primary {
+    flex: 1;
+    background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+.btn-buy-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(59, 130, 246, 0.4);
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+}
+
+.btn-cart-secondary {
+    flex: 1;
+    background: transparent;
+    color: #3b82f6;
+    padding: 16px 30px;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cart-secondary:hover {
+    background: rgba(59, 130, 246, 0.1);
+    transform: translateY(-3px);
+    border-color: #06b6d4;
+    color: #06b6d4;
+}
+
+.pickup-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pickup-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 15px;
+    background: rgba(16, 185, 129, 0.1);
+    border-left: 4px solid #10b981;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.pickup-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.pickup-item strong {
+    color: white;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.pickup-item p {
+    color: #cbd5e1;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Responsive Fragrance Showcase */
+@media (max-width: 1024px) {
+    .showcase-content {
+        gap: 40px;
+    }
+
+    .showcase-image {
+        min-height: 400px;
+    }
+
+    .showcase-details h2 {
+        font-size: 40px;
+    }
+
+    .fragrance-specs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .fragrance-showcase {
+        padding: 50px 0;
+    }
+
+    .showcase-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .showcase-image {
+        min-height: 350px;
+        padding: 30px;
+    }
+
+    .showcase-details h2 {
+        font-size: 32px;
+    }
+
+    .fragrance-subtitle {
+        font-size: 16px;
+    }
+
+    .fragrance-specs {
+        grid-template-columns: 1fr;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn-buy-primary,
+    .btn-cart-secondary {
+        width: 100%;
+    }
+
+    .price-amount {
+        font-size: 36px;
+    }
+
+    .pickup-section {
+        gap: 12px;
+    }
+
+    .pickup-item {
+        padding: 12px;
+    }
+}
+
 .continue-shopping-btn:hover {
     background: rgba(59, 130, 246, 0.05);
     border-color: rgba(59, 130, 246, 0.5);
