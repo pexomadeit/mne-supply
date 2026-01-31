@@ -26,13 +26,11 @@
                     <div class="dropdown-menu">
                         <a href="shop.html">All Products</a>
                         <a href="accessories.html" class="active">Accessories</a>
-                        <a href="phone-cases.html">Phone & AirPods Cases</a>
+                        <a href="tech-cases.html">Tech & Cases</a>
                         <a href="fragrances.html">Fragrances</a>
-                        <a href="clothing.html">Clothing & Apparel</a>
                     </div>
                 </li>
                 <li><a href="newsletter.html">Newsletter</a></li>
-                <li><a href="login.html">Login</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="#" onclick="openCart()" class="cart-icon">🛒 <span id="cart-count">0</span></a></li>
@@ -44,7 +42,7 @@
     <section class="shop-header">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>Premium Tech Accessories</h2>
+            <h2>Accessories</h2>
             <p>Same-day or next-day pickup available in Fargo-Moorhead</p>
         </div>
     </section>
@@ -53,48 +51,44 @@
     <section class="shop-filters">
         <div class="container">
             <div class="payment-banner">
-                <p>💵 <strong>Pay Cash at Pickup:</strong> Order online and pay cash in person!</p>
+                <p>💵 <strong>Primary Payment: Cash</strong> at pickup | We also accept Apple Pay & Cash App!</p>
             </div>
         </div>
     </section>
 
     <!-- Products Grid -->
-    <section class="shop-content">
+    <section class="fragrance-collection">
         <div class="container">
             <!-- Accessories Section -->
+            <div class="collection-header">
+                <h2>Accessories Collection</h2>
+                <p>Premium protective cases and tech accessories</p>
+            </div>
+            
             <div class="product-category">
-                <h3 class="category-title">Accessories</h3>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">🎧</div>
-                        <h4>Premium Wireless Earbuds</h4>
-                        <p class="product-spec">Noise-cancelling with 30-hour battery</p>
-                        <p class="product-price">$199.99</p>
-                        <button class="btn-cart" onclick="addToCart('Premium Wireless Earbuds', 199.99)">Add to Cart</button>
-                    </div>
+                <div class="fragrances-grid">
+                    <div class="fragrance-card">
+                        <div class="fragrance-image">
+                            <img src="clear-iPhone14-case.png" alt="Clear Transparent Case for iPhone 14">
+                        </div>
+                        <div class="fragrance-info">
+                            <span class="fragrance-badge">Premium</span>
+                            <h3>Clear Transparent Case for iPhone 14</h3>
+                            <p class="fragrance-subtext">Protective & Clear Design</p>
+                            
+                            <div class="specs-mini">
+                                <span class="spec-tag">iPhone 14</span>
+                                <span class="spec-tag">Transparent</span>
+                            </div>
 
-                    <div class="product-card">
-                        <div class="product-image">🎚️</div>
-                        <h4>Audio Speaker Pro</h4>
-                        <p class="product-spec">Portable with 360° sound</p>
-                        <p class="product-price">$149.99</p>
-                        <button class="btn-cart" onclick="addToCart('Audio Speaker Pro', 149.99)">Add to Cart</button>
-                    </div>
+                            <div class="price-display">
+                                <span class="frag-price">$12.00</span>
+                            </div>
 
-                    <div class="product-card">
-                        <div class="product-image">⌚</div>
-                        <h4>Smart Watch Elite</h4>
-                        <p class="product-spec">Activity tracking & notifications</p>
-                        <p class="product-price">$299.99</p>
-                        <button class="btn-cart" onclick="addToCart('Smart Watch Elite', 299.99)">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">🔌</div>
-                        <h4>Fast Charger 65W</h4>
-                        <p class="product-spec">Universal multi-device charging</p>
-                        <p class="product-price">$79.99</p>
-                        <button class="btn-cart" onclick="addToCart('Fast Charger 65W', 79.99)">Add to Cart</button>
+                            <div class="frag-buttons">
+                                <button class="btn-cart-frag" onclick="addToCart('Clear Transparent Case for iPhone 14', 12.00)">Add to Cart</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,7 +101,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>About MNE Supply</h4>
-                    <p>Your trusted retail destination for premium accessories, fragrances, and apparel.</p>
+                    <p>Your trusted retail destination for premium tech, accessories, and fragrances.</p>
                 </div>
 
                 <div class="footer-section">
@@ -124,10 +118,8 @@
                 <div class="footer-section">
                     <h4>Customer Service</h4>
                     <ul>
-                        <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
 
@@ -143,7 +135,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 MNE Supply. All rights reserved.</p>
+                <p>&copy; 2026 MNE Supply. All rights reserved.</p>
                 <p>Secure Shopping • Fast Shipping • Authentic Products</p>
             </div>
         </div>
@@ -294,7 +286,8 @@
         }
 
         function proceedToCheckout() {
-            window.location.href = 'login.html';
+            alert('Thank you for your order! Please proceed to pickup.');
+            closeCart();
         }
 
         document.addEventListener('DOMContentLoaded', function() {

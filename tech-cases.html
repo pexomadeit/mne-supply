@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shop Phone & AirPods Cases at MNE Supply - protective cases in Fargo, ND & Moorhead, MN with same-day pickup.">
-    <meta name="keywords" content="phone cases, airpods cases, screen protector, protective case">
+    <meta name="description" content="Shop Tech & Cases at MNE Supply - protective cases in Fargo, ND & Moorhead, MN with same-day pickup.">
+    <meta name="keywords" content="phone cases, airpods cases, screen protector, protective case, tech">
     <meta name="author" content="MNE Supply">
-    <meta property="og:title" content="Phone & AirPods Cases - MNE Supply">
+    <meta property="og:title" content="Tech & Cases - MNE Supply">
     <meta property="og:description" content="Browse our premium collection of phone and AirPods protective cases.">
     <meta property="og:type" content="website">
-    <title>Phone & AirPods Cases - MNE Supply</title>
+    <title>Tech & Cases - MNE Supply</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,13 +26,11 @@
                     <div class="dropdown-menu">
                         <a href="shop.html">All Products</a>
                         <a href="accessories.html">Accessories</a>
-                        <a href="phone-cases.html" class="active">Phone & AirPods Cases</a>
+                        <a href="tech-cases.html" class="active">Tech & Cases</a>
                         <a href="fragrances.html">Fragrances</a>
-                        <a href="clothing.html">Clothing & Apparel</a>
                     </div>
                 </li>
                 <li><a href="newsletter.html">Newsletter</a></li>
-                <li><a href="login.html">Login</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="#" onclick="openCart()" class="cart-icon">🛒 <span id="cart-count">0</span></a></li>
@@ -44,7 +42,7 @@
     <section class="shop-header">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>Phone & AirPods Cases</h2>
+            <h2>Tech & Protective Cases</h2>
             <p>Same-day or next-day pickup available in Fargo-Moorhead</p>
         </div>
     </section>
@@ -53,48 +51,72 @@
     <section class="shop-filters">
         <div class="container">
             <div class="payment-banner">
-                <p>💵 <strong>Pay Cash at Pickup:</strong> Order online and pay cash in person!</p>
+                <p>💵 <strong>Primary Payment: Cash</strong> at pickup | We also accept Apple Pay & Cash App!</p>
             </div>
         </div>
     </section>
 
     <!-- Products Grid -->
-    <section class="shop-content">
+    <section class="fragrance-collection">
         <div class="container">
-            <!-- Phone Cases Section -->
+            <!-- Tech & Cases Section -->
+            <div class="collection-header">
+                <h2>Tech & Cases Collection</h2>
+                <p>Premium audio and protective gear for all your devices</p>
+            </div>
+            
             <div class="product-category">
-                <h3 class="category-title">Phone & AirPods Cases</h3>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">📱</div>
-                        <h4>Protective Phone Case</h4>
-                        <p class="product-spec">Military-grade protection</p>
-                        <p class="product-price">$49.99</p>
-                        <button class="btn-cart" onclick="addToCart('Protective Phone Case', 49.99)">Add to Cart</button>
+                <div class="fragrances-grid">
+                    <div class="fragrance-card">
+                        <div class="fragrance-image">
+                            <img src="JLabs-Purp-Buds.png" alt="JLab Go Air Pop Earbuds">
+                        </div>
+                        <div class="fragrance-info">
+                            <span class="fragrance-badge">Premium</span>
+                            <h3>JLab Earbuds</h3>
+                            <p class="fragrance-subtext">True Wireless Audio</p>
+                            
+                            <div class="specs-mini">
+                                <span class="spec-tag">Bluetooth</span>
+                                <span class="spec-tag">32H Playtime</span>
+                            </div>
+
+                            <p class="fragrance-desc">True Wireless Earbuds, in Ear Headphones, Bluetooth Earphones, Ear Buds with 32H Playtime, Bluetooth Earbuds with Microphone, USB Charging Case, Dual Connect, EQ3 Sound</p>
+
+                            <div class="price-display">
+                                <span class="frag-price">$45.00</span>
+                            </div>
+
+                            <div class="frag-buttons">
+                                <button class="btn-cart-frag" onclick="addToCart('JLab Go Air Pop Earbuds', 45.00)">Add to Cart</button>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="product-card">
-                        <div class="product-image">🛡️</div>
-                        <h4>Premium Clear Case</h4>
-                        <p class="product-spec">Shows off device design</p>
-                        <p class="product-price">$34.99</p>
-                        <button class="btn-cart" onclick="addToCart('Premium Clear Case', 34.99)">Add to Cart</button>
-                    </div>
+                    <div class="fragrance-card">
+                        <div class="fragrance-image">
+                            <img src="Soundcore-buds-blck.png" alt="Soundcore Earbuds">
+                        </div>
+                        <div class="fragrance-info">
+                            <span class="fragrance-badge">Premium</span>
+                            <h3>(Anker) Soundcore Earbuds</h3>
+                            <p class="fragrance-subtext">True Wireless Audio</p>
+                            
+                            <div class="specs-mini">
+                                <span class="spec-tag">Bluetooth</span>
+                                <span class="spec-tag">Active Noise Cancel</span>
+                            </div>
 
-                    <div class="product-card">
-                        <div class="product-image">🎁</div>
-                        <h4>AirPods Pro Case</h4>
-                        <p class="product-spec">Sleek protective design</p>
-                        <p class="product-price">$24.99</p>
-                        <button class="btn-cart" onclick="addToCart('AirPods Pro Case', 24.99)">Add to Cart</button>
-                    </div>
+                            <p class="fragrance-desc">True Wireless Earbuds, 10mm Drivers with Big Bass, Bluetooth 5.3, 30H Long Playtime, Water-Resistant, 2 Mics for Clear Phone Calls</p>
 
-                    <div class="product-card">
-                        <div class="product-image">✨</div>
-                        <h4>Screen Protector Pack</h4>
-                        <p class="product-spec">3 tempered glass pieces</p>
-                        <p class="product-price">$14.99</p>
-                        <button class="btn-cart" onclick="addToCart('Screen Protector Pack', 14.99)">Add to Cart</button>
+                            <div class="price-display">
+                                <span class="frag-price">$55.00</span>
+                            </div>
+
+                            <div class="frag-buttons">
+                                <button class="btn-cart-frag" onclick="addToCart('Soundcore Earbuds', 55.00)">Add to Cart</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,7 +129,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>About MNE Supply</h4>
-                    <p>Your trusted retail destination for premium accessories, fragrances, and apparel.</p>
+                    <p>Your trusted retail destination for premium tech, accessories, and fragrances.</p>
                 </div>
 
                 <div class="footer-section">
@@ -124,10 +146,8 @@
                 <div class="footer-section">
                     <h4>Customer Service</h4>
                     <ul>
-                        <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
 
@@ -143,7 +163,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 MNE Supply. All rights reserved.</p>
+                <p>&copy; 2026 MNE Supply. All rights reserved.</p>
                 <p>Secure Shopping • Fast Shipping • Authentic Products</p>
             </div>
         </div>
@@ -301,7 +321,8 @@
         }
 
         function proceedToCheckout() {
-            window.location.href = 'login.html';
+            alert('Thank you for your order! Please proceed to pickup.');
+            closeCart();
         }
 
         document.addEventListener('DOMContentLoaded', function() {

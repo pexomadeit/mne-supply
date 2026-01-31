@@ -21,10 +21,19 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html" class="active">Products</a></li>
-                <li><a href="clothing.html">Clothing</a></li>
+                <li class="dropdown">
+                    <a href="shop.html">Shop</a>
+                    <div class="dropdown-menu">
+                        <a href="shop.html">All Products</a>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="tech-cases.html">Tech & Cases</a>
+                        <a href="fragrances.html">Fragrances</a>
+                    </div>
+                </li>
                 <li><a href="newsletter.html">Newsletter</a></li>
-                <li><a href="login.html">Login / Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" onclick="openCart()" class="cart-icon">🛒 <span id="cart-count">0</span></a></li>
             </ul>
         </div>
     </nav>
@@ -42,8 +51,8 @@
             <div class="filter-buttons">
                 <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
                 <button class="filter-btn" onclick="filterProducts('accessories')">Accessories</button>
-                <button class="filter-btn" onclick="filterProducts('cases')">Phone & AirPods Cases</button>
-                <button class="filter-btn" onclick="filterProducts('fragrance')">Cologne & Fragrance</button>
+                <button class="filter-btn" onclick="filterProducts('cases')">Tech & Cases</button>
+                <button class="filter-btn" onclick="filterProducts('fragrance')">Fragrances</button>
             </div>
         </div>
     </section>
@@ -106,9 +115,9 @@
         </div>
     </section>
 
-    <!-- Category 2: Phone & AirPods Cases -->
+    <!-- Category 2: Tech & Cases -->
     <section id="cases" class="product-category">
-        <h2>📱 Phone & AirPods Cases</h2>
+        <h2>📱 Tech & Cases</h2>
         <div class="product-grid">
             <div class="product-card" data-category="cases">
                 <div class="product-image">iPhone Case</div>
@@ -227,7 +236,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>About Us</h4>
-                <p>Your trusted retail destination for premium accessories, fragrances, and apparel.</p>
+                <p>Your trusted retail destination for premium tech, accessories, and fragrances.</p>
                 </div>
 
                 <div class="footer-section">
@@ -244,10 +253,8 @@
                 <div class="footer-section">
                     <h4>Customer Service</h4>
                     <ul>
-                        <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
 
@@ -265,19 +272,18 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="clothing.html">Clothing</a></li>
                     <li><a href="newsletter.html">Newsletter</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h4>Contact</h4>
-                <p>Email: info@mnedistribution.com</p>
+                <p>Email: xissambandz@gmail.com</p>
                 <p>Phone: 1-800-MNE-DIST</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 MNE Supply. All rights reserved.</p>
+            <p>&copy; 2026 MNE Supply. All rights reserved.</p>
             <p>Secure Shopping • Fast Shipping • Authentic Products</p>
         </div>
     </footer>

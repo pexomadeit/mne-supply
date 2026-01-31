@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shop MNE Supply - local deals on tech & lifestyle essentials in Fargo, ND & Moorhead, MN. Premium products with same-day pickup available.">
-    <meta name="keywords" content="shop, buy, accessories, phone cases, fragrances, clothing, streetwear">
+    <meta name="description" content="Shop MNE Supply - local deals on tech, accessories & fragrances in Fargo, ND & Moorhead, MN. Premium products with same-day pickup available.">
+    <meta name="keywords" content="shop, buy, tech, accessories, phone cases, fragrances">
     <meta name="author" content="MNE Supply">
     <meta property="og:title" content="Shop - MNE Supply">
-    <meta property="og:description" content="Browse our complete collection of premium accessories, cases, fragrances, and apparel.">
+    <meta property="og:description" content="Browse our complete collection of premium tech, accessories, cases, and fragrances.">
     <meta property="og:type" content="website">
-    <title>Shop - MNE Supply | Premium Accessories & Apparel</title>
+    <title>Shop - MNE Supply | Tech, Accessories & Fragrances</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,13 +26,11 @@
                     <div class="dropdown-menu">
                         <a href="shop.html" class="active">All Products</a>
                         <a href="accessories.html">Accessories</a>
-                        <a href="phone-cases.html">Phone & AirPods Cases</a>
+                        <a href="tech-cases.html">Tech & Cases</a>
                         <a href="fragrances.html">Fragrances</a>
-                        <a href="clothing.html">Clothing & Apparel</a>
                     </div>
                 </li>
                 <li><a href="newsletter.html">Newsletter</a></li>
-                <li><a href="login.html">Login</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="#" onclick="openCart()" class="cart-icon">🛒 <span id="cart-count">0</span></a></li>
@@ -53,14 +51,13 @@
     <section class="shop-filters">
         <div class="container">
             <div class="payment-banner">
-                <p>💵 <strong>Pay Cash at Pickup:</strong> Order online and pay cash when you pick up at our Fargo location—no processing fees!</p>
+                <p>💵 <strong>Primary Payment: Cash</strong> at pickup | We also accept Apple Pay & Cash App!</p>
             </div>
             <div class="filter-buttons">
                 <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
                 <button class="filter-btn" onclick="filterProducts('accessories')">Accessories</button>
                 <button class="filter-btn" onclick="filterProducts('cases')">Phone Cases</button>
                 <button class="filter-btn" onclick="filterProducts('fragrance')">Fragrances</button>
-                <button class="filter-btn" onclick="filterProducts('clothing')">Clothing</button>
             </div>
         </div>
     </section>
@@ -73,73 +70,33 @@
                 <h3 class="category-title">Accessories</h3>
                 <div class="product-grid">
                     <div class="product-card">
-                        <div class="product-image">🎧</div>
-                        <h4>Premium Wireless Earbuds</h4>
-                        <p class="product-spec">Noise-cancelling with 30-hour battery</p>
-                        <p class="product-price">$199.99</p>
-                        <button class="btn-cart" onclick="addToCart('Premium Wireless Earbuds', 199.99)">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">🎚️</div>
-                        <h4>Audio Speaker Pro</h4>
-                        <p class="product-spec">Portable with 360° sound</p>
-                        <p class="product-price">$149.99</p>
-                        <button class="btn-cart" onclick="addToCart('Audio Speaker Pro', 149.99)">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">⌚</div>
-                        <h4>Smart Watch Elite</h4>
-                        <p class="product-spec">Activity tracking & notifications</p>
-                        <p class="product-price">$299.99</p>
-                        <button class="btn-cart" onclick="addToCart('Smart Watch Elite', 299.99)">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">🔌</div>
-                        <h4>Fast Charger 65W</h4>
-                        <p class="product-spec">Universal multi-device charging</p>
-                        <p class="product-price">$79.99</p>
-                        <button class="btn-cart" onclick="addToCart('Fast Charger 65W', 79.99)">Add to Cart</button>
+                        <div class="product-image"><img src="clear-iPhone14-case.png" alt="Clear Transparent Case for iPhone 14" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;"></div>
+                        <h4>Clear Transparent Case for iPhone 14</h4>
+                        <p class="product-spec">iPhone 14, Transparent</p>
+                        <p class="product-price">$12.00</p>
+                        <button class="btn-cart" onclick="addToCart('Clear Transparent Case for iPhone 14', 12.00)">Add to Cart</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Phone Cases Section -->
+            <!-- Tech & Cases Section -->
             <div class="product-category" id="cases">
-                <h3 class="category-title">Phone & AirPods Cases</h3>
+                <h3 class="category-title">Tech & Cases</h3>
                 <div class="product-grid">
                     <div class="product-card">
-                        <div class="product-image">📱</div>
-                        <h4>Protective Phone Case</h4>
-                        <p class="product-spec">Military-grade protection</p>
-                        <p class="product-price">$49.99</p>
-                        <button class="btn-cart" onclick="addToCart('Protective Phone Case', 49.99)">Add to Cart</button>
+                        <div class="product-image"><img src="JLabs-Purp-Buds.png" alt="JLab Go Air Pop Earbuds" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;"></div>
+                        <h4>JLab Go Air Pop Earbuds</h4>
+                        <p class="product-spec">True Wireless, 32H Playtime, Bluetooth</p>
+                        <p class="product-price">$45.00</p>
+                        <button class="btn-cart" onclick="addToCart('JLab Go Air Pop Earbuds', 45.00)">Add to Cart</button>
                     </div>
 
                     <div class="product-card">
-                        <div class="product-image">🛡️</div>
-                        <h4>Premium Clear Case</h4>
-                        <p class="product-spec">Shows off device design</p>
-                        <p class="product-price">$34.99</p>
-                        <button class="btn-cart" onclick="addToCart('Premium Clear Case', 34.99)">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">🎁</div>
-                        <h4>AirPods Pro Case</h4>
-                        <p class="product-spec">Sleek protective design</p>
-                        <p class="product-price">$24.99</p>
-                        <button class="btn-cart" onclick="addToCart('AirPods Pro Case', 24.99)">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">✨</div>
-                        <h4>Screen Protector Pack</h4>
-                        <p class="product-spec">3 tempered glass pieces</p>
-                        <p class="product-price">$14.99</p>
-                        <button class="btn-cart" onclick="addToCart('Screen Protector Pack', 14.99)">Add to Cart</button>
+                        <div class="product-image"><img src="Soundcore-buds-blck.png" alt="Soundcore Earbuds" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;"></div>
+                        <h4>(Anker) Soundcore Earbuds</h4>
+                        <p class="product-spec">Bluetooth 5.3, 30H Playtime, ANC</p>
+                        <p class="product-price">$55.00</p>
+                        <button class="btn-cart" onclick="addToCart('Soundcore Earbuds', 55.00)">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -149,49 +106,12 @@
                 <h3 class="category-title">Fragrances</h3>
                 <div class="product-grid">
                     <div class="product-card">
-                        <div class="product-image"><img src="suave cologne.png.png" alt="Suave Cologne 3.8 FL. OZ Bottle" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                        <div class="product-image"><img src="suave-cologne.png" alt="Suave Cologne 3.8 FL. OZ Bottle" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;"></div>
                         <h4>Suave Cologne</h4>
+                        <p style="color: #ef4444; font-weight: 600; font-size: 12px; margin: 5px 0;">⚠️ Limited Supply</p>
                         <p class="product-spec">3.8 FL. OZ Bottle</p>
                         <p class="product-price">$25.00</p>
                         <button class="btn-cart" onclick="addToCart('Suave Cologne 3.8 FL. OZ', 25.00)">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Clothing Section -->
-            <div class="product-category" id="clothing">
-                <h3 class="category-title">Clothing & Apparel</h3>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">👕</div>
-                        <h4>Premium Graphic Tee</h4>
-                        <p class="product-spec">100% organic cotton</p>
-                        <p class="product-price">$39.99</p>
-                        <button class="btn-cart" onclick="addToCart('Premium Graphic Tee', 39.99)">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">🧥</div>
-                        <h4>Classic Hoodie</h4>
-                        <p class="product-spec">Comfort fit with pockets</p>
-                        <p class="product-price">$59.99</p>
-                        <button class="btn-cart" onclick="addToCart('Classic Hoodie', 59.99)">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">👖</div>
-                        <h4>Jogger Pants</h4>
-                        <p class="product-spec">Modern fit, premium fabric</p>
-                        <p class="product-price">$69.99</p>
-                        <button class="btn-cart" onclick="addToCart('Jogger Pants', 69.99)">Add to Cart</button>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">🧢</div>
-                        <h4>Signature Cap</h4>
-                        <p class="product-spec">Adjustable with embroidered logo</p>
-                        <p class="product-price">$34.99</p>
-                        <button class="btn-cart" onclick="addToCart('Signature Cap', 34.99)">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -204,7 +124,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>About MNE Supply</h4>
-                    <p>Your trusted retail destination for premium accessories, fragrances, and apparel.</p>
+                    <p>Your trusted retail destination for premium tech, accessories, and fragrances.</p>
                 </div>
 
                 <div class="footer-section">
@@ -221,10 +141,8 @@
                 <div class="footer-section">
                     <h4>Customer Service</h4>
                     <ul>
-                        <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
 
@@ -240,7 +158,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 MNE Supply. All rights reserved.</p>
+                <p>&copy; 2026 MNE Supply. All rights reserved.</p>
                 <p>Secure Shopping • Fast Shipping • Authentic Products</p>
             </div>
         </div>
@@ -412,7 +330,8 @@
         }
 
         function proceedToCheckout() {
-            window.location.href = 'login.html';
+            alert('Thank you for your order! Please proceed to pickup.');
+            closeCart();
         }
 
         // Initialize cart on page load
