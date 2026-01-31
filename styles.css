@@ -3117,3 +3117,389 @@ a {
         grid-column: 2;
     }
 }
+
+/* ==================== ENHANCED MOBILE RESPONSIVE ==================== */
+@media (max-width: 480px) {
+    /* General */
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* Navigation */
+    .navbar {
+        padding: 0.75rem 0;
+    }
+
+    .nav-container {
+        padding: 0 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+
+    .nav-menu {
+        gap: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .cart-icon {
+        padding: 0.5rem 0.75rem;
+    }
+
+    /* Hero Section */
+    .hero-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-cta {
+        gap: 0.75rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Featured Product */
+    .featured-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .featured-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .featured-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .featured-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .featured-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .featured-price {
+        font-size: 1.8rem;
+    }
+
+    .featured-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .buy-button,
+    .btn-secondary {
+        width: 100%;
+        padding: 0.9rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .pickup-benefits {
+        font-size: 0.9rem;
+    }
+
+    .pickup-benefits p {
+        margin: 0.5rem 0;
+    }
+
+    /* Category Grid */
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        padding: 1.5rem;
+    }
+
+    .category-card h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Product Grid */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        padding: 1rem;
+    }
+
+    .product-card h4 {
+        font-size: 1rem;
+    }
+
+    .product-spec {
+        font-size: 0.9rem;
+    }
+
+    .product-price {
+        font-size: 1.2rem;
+    }
+
+    /* Fragrance Grid */
+    .fragrances-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fragrance-card {
+        max-width: 100%;
+    }
+
+    .fragrance-image {
+        max-height: 350px;
+    }
+
+    .fragrance-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .frag-price {
+        font-size: 1.5rem;
+    }
+
+    /* Filter Buttons */
+    .filter-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .filter-btn {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    /* Payment Banner */
+    .payment-banner p {
+        font-size: 0.85rem;
+        padding: 0.75rem;
+    }
+
+    /* Cart Modal */
+    .cart-modal {
+        align-items: flex-end;
+    }
+
+    .cart-modal-content {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 12px 12px 0 0;
+        max-height: 90vh;
+    }
+
+    .cart-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .cart-item {
+        padding: 0.75rem;
+        gap: 0.5rem;
+    }
+
+    .item-info h4 {
+        font-size: 0.95rem;
+    }
+
+    .item-info p {
+        font-size: 0.85rem;
+    }
+
+    .item-quantity input {
+        width: 40px;
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+
+    .item-quantity button {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .remove-btn {
+        padding: 0.4rem 0.6rem;
+    }
+
+    .summary-row {
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+    }
+
+    .checkout-btn,
+    .continue-shopping-btn {
+        width: 100%;
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .footer-section p,
+    .footer-section li {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        gap: 0.5rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+
+    /* Forms */
+    form {
+        padding: 1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+        padding: 0.75rem;
+    }
+
+    /* About & Contact Pages */
+    .about-section,
+    .contact-section {
+        padding: 1rem;
+    }
+
+    .about-content h2,
+    .contact-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-content h3,
+    .contact-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .why-us-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-us-card {
+        padding: 1rem;
+    }
+
+    .why-us-card h4 {
+        font-size: 1rem;
+    }
+
+    /* Newsletter */
+    .newsletter-hero {
+        padding: 2rem 1rem;
+    }
+
+    .newsletter-form-wrapper {
+        padding: 1.5rem;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        font-size: 0.95rem;
+        padding: 0.8rem;
+    }
+
+    /* Collection Header */
+    .collection-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .collection-header p {
+        font-size: 0.95rem;
+    }
+
+    /* Fix horizontal scroll */
+    * {
+        max-width: 100%;
+    }
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .container {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Additional tablet/mobile improvements */
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .fragrances-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        padding: 0.75rem 0;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(26, 31, 58, 0.95);
+        border-radius: 8px;
+        min-width: 150px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .cart-item {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .item-info,
+    .item-quantity,
+    .item-price,
+    .remove-btn {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
