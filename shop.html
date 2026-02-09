@@ -10,7 +10,7 @@
     <meta property="og:description" content="Browse our complete collection of premium tech, accessories, cases, and fragrances.">
     <meta property="og:type" content="website">
     <title>Shop - MNE Supply | Tech, Accessories & Fragrances</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -24,7 +24,6 @@
                 <li class="dropdown">
                     <a href="shop.html">Shop</a>
                     <div class="dropdown-menu">
-                        <a href="shop.html" class="active">All Products</a>
                         <a href="accessories.html">Accessories</a>
                         <a href="tech-cases.html">Tech & Cases</a>
                         <a href="fragrances.html">Fragrances</a>
@@ -51,12 +50,12 @@
     <section class="shop-filters">
         <div class="container">
             <div class="payment-banner">
-                <p>💵 <strong>Primary Payment: Cash</strong> at pickup | We also accept Apple Pay & Cash App!</p>
+                <p>💵 <strong>Primary Payment: Cash</strong> at pickup | Also accept Apple Pay & Cash App!</p>
             </div>
             <div class="filter-buttons">
                 <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
+                <button class="filter-btn" onclick="filterProducts('cases')">Tech & Cases</button>
                 <button class="filter-btn" onclick="filterProducts('accessories')">Accessories</button>
-                <button class="filter-btn" onclick="filterProducts('cases')">Phone Cases</button>
                 <button class="filter-btn" onclick="filterProducts('fragrance')">Fragrances</button>
             </div>
         </div>
@@ -70,33 +69,33 @@
                 <h3 class="category-title">Accessories</h3>
                 <div class="product-grid">
                     <div class="product-card">
-                        <div class="product-image"><img src="clear-iPhone14-case.png" alt="Clear Transparent Case for iPhone 14" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;"></div>
-                        <h4>Clear Transparent Case for iPhone 14</h4>
-                        <p class="product-spec">iPhone 14, Transparent</p>
-                        <p class="product-price">$12.00</p>
-                        <button class="btn-cart" onclick="addToCart('Clear Transparent Case for iPhone 14', 12.00)">Add to Cart</button>
+                        <div class="product-image" style="background: none; border: none;"><img src="images/apple-watch-bumper-case.png" alt="Apple Watch Bumper Case" style="width: 100%; height: 100%; object-fit: contain;"></div>
+                        <h4>Apple Watch Bumper Case</h4>
+                        <p class="product-spec">Protective Silicone</p>
+                        <p class="product-price">$5.00</p>
+                        <button class="btn-cart" onclick="window.open('https://www.facebook.com/marketplace/item/2214845336014533', '_blank')">Buy Now</button>
                     </div>
                 </div>
             </div>
 
             <!-- Tech & Cases Section -->
             <div class="product-category" id="cases">
-                <h3 class="category-title">Tech & Cases</h3>
+                <h3 class="category-title">Tech</h3>
                 <div class="product-grid">
                     <div class="product-card">
-                        <div class="product-image"><img src="JLabs-Purp-Buds.png" alt="JLab Go Air Pop Earbuds" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;"></div>
-                        <h4>JLab Go Air Pop Earbuds</h4>
-                        <p class="product-spec">True Wireless, 32H Playtime, Bluetooth</p>
-                        <p class="product-price">$45.00</p>
-                        <button class="btn-cart" onclick="addToCart('JLab Go Air Pop Earbuds', 45.00)">Add to Cart</button>
+                        <div class="product-image" style="background: none; border: none;"><img src="images/JLabs-Purp-Buds.png" alt="JLab GO Air Pop Wireless Earbuds" style="width: 100%; height: 100%; object-fit: contain;"></div>
+                        <h4>JLab GO Air Pop Wireless Earbuds</h4>
+                        <p class="product-spec">True Wireless, 32H Playtime, EQ3 Sound</p>
+                        <p class="product-price">$25.00</p>
+                        <button class="btn-cart" onclick="window.open('https://www.facebook.com/marketplace/item/1193823519406787', '_blank')">Buy Now</button>
                     </div>
 
                     <div class="product-card">
-                        <div class="product-image"><img src="Soundcore-buds-blck.png" alt="Soundcore Earbuds" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;"></div>
-                        <h4>(Anker) Soundcore Earbuds</h4>
+                        <div class="product-image" style="background: none; border: none;"><img src="images/soundcore-Anker-P20i.png" alt="Soundcore by Anker P20i Wireless Earbuds" style="width: 100%; height: 100%; object-fit: contain;"></div>
+                        <h4>Soundcore by Anker P20i Wireless Earbuds</h4>
                         <p class="product-spec">Bluetooth 5.3, 30H Playtime, ANC</p>
-                        <p class="product-price">$55.00</p>
-                        <button class="btn-cart" onclick="addToCart('Soundcore Earbuds', 55.00)">Add to Cart</button>
+                        <p class="product-price">$35.00</p>
+                        <button class="btn-cart" onclick="window.open('https://www.facebook.com/marketplace/item/1584495766205701', '_blank')">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -106,12 +105,12 @@
                 <h3 class="category-title">Fragrances</h3>
                 <div class="product-grid">
                     <div class="product-card">
-                        <div class="product-image"><img src="suave-cologne.png" alt="Suave Cologne 3.8 FL. OZ Bottle" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;"></div>
+                        <div class="product-image"><img src="images/suave-cologne.png" alt="Suave Cologne 3.8 FL. OZ Bottle" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;"></div>
                         <h4>Suave Cologne</h4>
                         <p style="color: #ef4444; font-weight: 600; font-size: 12px; margin: 5px 0;">⚠️ Limited Supply</p>
                         <p class="product-spec">3.8 FL. OZ Bottle</p>
-                        <p class="product-price">$25.00</p>
-                        <button class="btn-cart" onclick="addToCart('Suave Cologne 3.8 FL. OZ', 25.00)">Add to Cart</button>
+                        <p class="product-price">$45.00</p>
+                        <button class="btn-cart" onclick="addToCart('Suave Cologne 3.8 FL. OZ', 45.00)">Add to Cart</button>
                     </div>
                 </div>
             </div>
